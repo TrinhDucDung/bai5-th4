@@ -10,14 +10,15 @@
 
 <body>
     <script>
-        let inputWidth;
-        let inputHeight;
-        inputWidth = prompt("Enter the width");
-        inputHeight = prompt("Enter the height");
-        let width = parseInt(inputWidth);
-        let height = parseInt(inputHeight);
-        let area = width * height;
-        document.write("The area is: " + area);
+        let width, height, area;
+        width = parseFloat(prompt("Nhập chiều rộng hình chữ nhật"));
+        height = parseFloat(prompt("Nhập chiều dài hình chữ nhật"));
+        // prompt() return String
+        // parseFloat dành tất cả các số có dạng như 1.0 2.4
+        // parseInt dành cho các số nguyên như 1 2 3 4
+        area = width * height; // công thức
+        console.log("area: ", area);
+        document.write("Area: " + area);
     </script>
 </body>
 
